@@ -1,0 +1,120 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+.geral{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: sans-serif;
+    width: 90%;
+    height: 100vh;
+}
+.pai{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.foto-celular img{
+    width: 43rem;
+}
+.dados-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.filho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+.login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.baixar-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.aplicativos{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.download {
+    height: 2.5rem;
+    width: 8rem;
+    background-size: cover;
+}
+.download:nth-child(1) {
+    background-image: url("../img/apple-button.png");
+}
+
+.download:nth-child(2) {
+    background-image: url("../img/googleplay-button.png");
+}
+.link-blue{
+    color: #0095f6;
+}
+.instagram-logo{
+    height: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .geral {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .geral {
+        width: 90%;
+    }
+
+    .foto-celular {
+        display: none;
+    }
+
+    .dados-perfil {
+        width: 100%;
+    }
+    
+    .filho {
+        border: 1px solid transparent;
+    }
+}
