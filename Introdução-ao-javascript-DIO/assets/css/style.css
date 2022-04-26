@@ -9,12 +9,15 @@
     margin: 0;
     font-size: 20px;
 }
-.principal{
-    width: 100vw;
+body{
+    width: 100%;
     height: 100%;
 }
-header .navbar #navbar-imagem{
+header .navbar{
     width: 100%;
+}
+header .navbar #navbar-imagem{
+    max-width: 10em;
     height: 100%;
     filter: brightness(33%);
 }
@@ -22,17 +25,17 @@ header .navbar{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    background-color: var(--cor-fundo-navbar);
+
 }
 header .navbar .navbar-display-flex{
     display: flex;
-    background-color: var(--cor-fundo-navbar);
-    padding: 0 40px;
     list-style-type: none;
     text-align: center;
     color: var(--cor-fonte-principal);
 }
 header .navbar .navbar-display-flex .navbar-titulo{
-    padding: 30px 190px;
+    padding: 3rem 6rem;
     font-size: 1.3rem;
 }
 header .navbar ul li a{
@@ -52,7 +55,7 @@ main .titulos-principais{
     padding: 1rem 0;
     border-bottom: 1px solid var(--cor-fundo-navbar);
 }
-main #inicio, #sobre, #contato{
+main #primeiro, #segundo, #terceiro{
     width: 100%;
     height: 15vh;
 }
@@ -62,13 +65,14 @@ main div{
     width: 90%;
     text-align: center;
     margin: 2%;
+    background-color: #123456;
 }
 main figure img{
     width: 30vw;
     height: 40vh;
     object-fit:cover;
-    margin: 2%;
-    padding: 2%;
+    margin: 1%;
+    padding: 1%;
 }
 main figure img:hover{
     transform: scale(1.2);
@@ -82,8 +86,41 @@ main figure img:hover::before{
 footer{
     background-color: var(--cor-fundo-navbar);
     text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: var(--cor-fonte-principal);
 }
 footer .rodape{
     font-size: 12px;
+    margin: 10px;
     color: var(--cor-fundo-titulos);
+}
+
+@media (max-width:1024px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+    }
+    .navbar-display-flex .navbar-titulo a{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 630px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+    }
+    header .navbar .navbar-display-flex{
+        display: none;
+    }
 }
