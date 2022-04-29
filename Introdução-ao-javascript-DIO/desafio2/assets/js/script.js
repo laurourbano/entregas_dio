@@ -1,5 +1,5 @@
-/*var mensagemDeCarregamento = document.querySelector(".rodape");
-mensagemDeCarregamento.textContent = "javascript do documento carregado com sucesso";*/
+var mensagemDeCarregamento = document.querySelector(".rodape");
+mensagemDeCarregamento.textContent = "javascript do documento carregado com sucesso";
 
 function comparaNumeros(numero1, numero2){
     const primeiraFrase = criaPrimeiraFrase(numero1, numero2);
