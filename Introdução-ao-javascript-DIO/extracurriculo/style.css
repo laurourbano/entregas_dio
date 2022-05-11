@@ -11,9 +11,3 @@ button{
     background-color: black;
     color: white;
 }
-.inverter{
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor:pointer;
-}
