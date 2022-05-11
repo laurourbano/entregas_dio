@@ -1,13 +1,12 @@
-body{
-    background-color: #f1f2aa;
-    justify-content: center;
-    align-items: center;
-}
 button{
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor:pointer;
-    background-color: black;
-    color: white;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    font-size: 25px;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    cursor: pointer;
+    /*position: absolute;*/
+    display: block;
+    opacity: .4;
 }
